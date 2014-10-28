@@ -11,6 +11,8 @@ Vagrant provisioning script for IBM DB2 Express, and nosql instructions
 * exit
 * vagrant provision
 * vagrant ssh
+* install Java and set JAVA_HOME
+* Download db2jcc4.jar and add to CLASSPATH
 * add vagrant user to db2 admin and user groups. this user will be connecting to the db
 * create db
   * su
