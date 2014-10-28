@@ -28,3 +28,8 @@ Vagrant provisioning script for IBM DB2 Express, and nosql instructions
   * cd /opt/ibm/db2/V10.5/json/bin
   * ./db2nosql.sh -user vagrant -db jsondb
   * enable(true)
+* Start the wirelistener
+  * cd /opt/ibm.db2/V10.5/bin 
+  * ./wplistener.sh -start -mongoPort 27017 -userid db2admin -password mypasswd
+
+                       -dbName <dbName> 
