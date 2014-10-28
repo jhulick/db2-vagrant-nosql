@@ -3,7 +3,7 @@ db2-vagrant-nosql
 
 Vagrant provisioning script for IBM DB2 Express, and nosql instructions
 
-* clone repo and cd to root
+* clone repo and cd to base dir
 * download [DB2 Express-C for Linux 64-bit](http://www-01.ibm.com/software/data/db2/express-c/download.html) for the host VM
 * vagrant up
 * vagrant ssh
