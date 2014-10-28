@@ -5,12 +5,12 @@ yum update -y
 
 yum install -y wget nfs-utils libaio* ksh compat-libstdc++* libstdc++* numactl.x86_64 pam.i686 yum install libstdc++.i686
 
-cp /vagrant/v10.5fp1_linuxx64_expc.tar.gz /tmp
+cp /vagrant/v10.5_linuxx64_expc.tar.gz /tmp
 cd /tmp
 
-tar -xvf v10.5fp1_linuxx64_expc.tar.gz
+tar -xvf v10.5_linuxx64_expc.tar.gz
 
-rm -f v10.5fp1_linuxx64_expc.tar.gz
+rm -f v10.5_linuxx64_expc.tar.gz
 
 # Launch the installer
 /tmp/expc/db2_install -n -b /opt/ibm/db2/V10.5  -p expc
