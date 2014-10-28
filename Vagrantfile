@@ -20,6 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "db2-express" do |master|
     master.vm.network :public_network
     master.vm.network :private_network, ip: "#{privateSubnet}.#{privateStartingIp}", virtualbox__intnet: "db2network"
+    master.vm.network "forwarded_port", guest: 50000, host: 50000
     master.vm.hostname = "db2-express"
 
     master.vm.provider "vmware_fusion" do |v|
